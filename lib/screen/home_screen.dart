@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -7,32 +8,32 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return  Scaffold(
       appBar: AppBar(
-        title: const Text("Welcome",
+        title:  Text("Welcome",
           style: TextStyle(
-            fontSize: 24,
             fontWeight:FontWeight.bold,
+            fontSize: 24.sp,
           ),
          ),
       ),
       body: Center(
         child: Column(
           children: [
-            const SizedBox(
-              height: 10,
+            SizedBox(
+              height:  MediaQuery.of(context).size.height/20,
             ),
             ClipRRect(
               borderRadius: BorderRadius.circular(20.0),
               child: Image.asset(
                 'assets/logo1.png',
-                height: 200,
-                width: 300,
+                height: 200.h,
+                width: 300.w,
                 fit: BoxFit.cover,
 
 
               ),
             ),
-            const SizedBox(
-              height: 10,
+             SizedBox(
+              height:  MediaQuery.of(context).size.height/20,
             ),
             Container(
 
@@ -42,12 +43,12 @@ class HomeScreen extends StatelessWidget {
                ),
 
               //color: Colors.pinkAccent,
-              height:200,
-              width: 300,
-              child: const Center(
+              height:200.h,
+              width: 300.w,
+              child:  Center(
                 child: Text("Welcome",
                   style: TextStyle(
-                    fontSize: 24,
+                    fontSize: 24.sp,
                     fontWeight:FontWeight.bold,
                   ),
                 ),

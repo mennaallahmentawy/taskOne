@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class Date extends StatefulWidget {
   const Date({super.key});
@@ -15,10 +16,10 @@ class _DateState extends State<Date> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text(
+        title:  Text(
           'welcome',
           style: TextStyle(
-            fontSize: 24,
+            fontSize: 24.sp,
             fontWeight: FontWeight.bold,
           ),
         ),
